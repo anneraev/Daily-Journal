@@ -4,9 +4,12 @@ console.log("buildHTML working");
 const buildHTML = (title, type, content, id, className) => {
     const newElement = document.createElement(type);
     newElement.classList.add("journal--subentry")
-    newElement.classList.add(`${title}`)
-    console.log("content", content);
-    newElement.innerHTML = `<h4>${title}: </h4>`;
+    if (title) {
+        newElement.classList.add(`${title}`)
+    }
+    if (title) {
+        newElement.innerHTML = `<h4>${title}: </h4>`;
+    }
     newElement.innerHTML += `<p>${content}</p>`;
     if (id) {
         newElement.id = id
@@ -14,6 +17,5 @@ const buildHTML = (title, type, content, id, className) => {
     if (className) {
         newElement.classList.add(className);
     }
-    console.log(newElement);
     return newElement;
 }

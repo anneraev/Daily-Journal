@@ -15,7 +15,6 @@ const createJournal = () => {
     //pass data to function that calls object constructor.
     const journalEntry = createJournalEntry(date.value, concepts.value, entry.value, mood.value);
     //passes journal entry to the API function that adds it to the database.
-    console.log("entry to pass", journalEntry);
     //
     API.postToDatabase(journalEntry).then(() => API.getJournals());
     date.value = ""
