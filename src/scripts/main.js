@@ -21,3 +21,11 @@ radioField.addEventListener("click", event => {
         API.getJournalEntries().then(response => filterJournals(response, filter));
     }
 })
+
+const searchTextBox = document.getElementById("journal--search");
+
+searchTextBox.addEventListener("keypress", event => {
+    if (event.keyCode ===  13){
+        searchEntries(searchTextBox.value);
+    }
+})
