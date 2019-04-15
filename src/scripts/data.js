@@ -28,16 +28,5 @@ const API = {
             method: "DELETE",
         })
     },
-    patch: (id, object) => {
-        return fetch(`http://localhost:8088/journalEntries/${id}`, {
-            //method
-            method: "PATCH",
-            //required metadata.
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify(object)
-        })
-    }
 
 }

@@ -36,10 +36,3 @@ const deleteJournal = (id) => {
         API.getJournals()
     })
 }
-
-const editJournal = (fieldId, date, entry, concepts, mood) => {
-    const field = document.getElementById(fieldId);
-    domManager.clearElement(field);
-    const entryField = domManager.createEntryField(date, entry, concepts, mood);
-    field.appendChild(entryField);
-}
