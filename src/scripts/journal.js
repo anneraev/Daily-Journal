@@ -55,3 +55,19 @@ const updateJournal = (dateEntry, conceptEntry, entryField, moodEntry, id) => {
     }
     API.patch(id, updatedJournal).then(() => API.getJournals());
 }
+
+searchEntries = (searchString) => {
+    API.getJournalEntries().then(entries => {
+        return searchedJournals = entries.filter(entry => {
+            let searchMatch = false;
+            for (value of Object.values(entry)){
+                if (typeof value === "string" && value.includes(searchString)){
+                    searchMatch = true
+                }
+            }
+            return searchMatch;
+        })
+    }).then(journals => {
+        displayJournals(journals)
+    });
+}
