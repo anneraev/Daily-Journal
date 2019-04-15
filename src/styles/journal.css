@@ -1,0 +1,16 @@
+.journal--column{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 50%;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 40%
+}
+
+.journal--submit{
+    max-width: 30%
+}

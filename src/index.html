@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="styles/journal.css">
+</head>
+
+<body>
+    <h1>Daily Journal</h1>
+    <form action="" class="form">
+        <fieldset>
+            <div class="journal--column">
+                <label for="journalDate">Date of Entry</label>
+                <input class="inputField" type="date" name="journalDate" id="journalDate">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="journal--column">
+                <label for="journalConcepts">Concepts covered</label>
+                <input class="inputField" type="text" name="journalConcepts" id="journalConcepts">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="journal--column">
+                <label for="journalEntry">Journal Entry</label>
+                <textarea class="inputField" name="journalEntry" id="journalEntry" cols="30 " rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="journal--column">
+                <label for="currentMood">Current Mood</label>
+                <select class="inputField" name="currentMood" id="currentMood">
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Confused">Confused</option>
+                    <option value="Frustrated">Frustrated</option>
+                    <option value="Proud">Proud</option>
+                    <option value="Optimistic">Optimistic</option>
+                    <option value="Solipsistic">Solipsistic</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit" class="journal--submit" id="submitbtn">
+            Record Journal Entry
+        </button>
+    </form>
+
+    <fieldset>
+        <legend>Filter By Mood</legend>
+        <div id="journal--filter">
+            <label>Happy</label>
+            <input type="radio" name="filter" value="Happy">
+            <label>Sad</label>
+            <input type="radio" name="filter" value="Sad">
+            <label>Confused</label>
+            <input type="radio" name="filter" value="Confused">
+            <label>Frustrated</label>
+            <input type="radio" name="filter" value="Frustrated">
+            <label>Proud</label>
+            <input type="radio" name="filter" value="Proud">
+            <label>Optimistic</label>
+            <input type="radio" name="filter" value="Optimistic">
+            <label>Solipsistic</label>
+            <input type="radio" name="filter" value="Solipsistic">
+        </div>
+    </fieldset>
+
+    <article id="display-container"></article>
+
+    <script src ="scripts/data.js"></script>
+    <script src="scripts/entryComponent.js"></script>
+    <script src="scripts/objectManager.js"></script>
+    <script src="scripts/entriesDom.js"></script>
+    <script src="scripts/eventManager.js"></script>
+    <script src="scripts/journal.js"></script>
+    <script src="scripts/main.js"></script>
+</body>

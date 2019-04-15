@@ -1,0 +1,60 @@
+{
+  "journalEntries": [
+    {
+      "date": "2019-03-29",
+      "concepts": "Stuff",
+      "entry": "All work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.\nAll work and no play makes Jack a dull boy.",
+      "mood": "Frustrated",
+      "id": 1
+    },
+    {
+      "date": "2019-03-29",
+      "concepts": "Patience and Discomfort",
+      "entry": "Most of the proceeding journals will be related to code. This one, however, is for me to solidify something that I've been grappling with for a while.\n\nCommunication is difficult for me. The simple act of opening my mouth creates massive discomfort. I have a hard time reading people because the information I'm receiving often gives me anxiety. \n\nIf I didn't want to do deal with that, then this career wouldn't be for me. However, I DO want to deal with it. Since I was about 17 I've purposefully sought out paths that put me in the headlights of my own social deficiencies. I learned how to deal with myself in theatre to some extent. I can do so in this context as well.\n\nWhile not comfortable per-se, the tumultuous environment inside my mind is at least familiar. I've been trying to learn to stay out of it, because I can easily spiral into shutting down.\n\nLately, I've been telling myself, whenever I'm uncomfortable with something so mundane as saying hello to someone or voicing an opinion, to just \"lean in\" to that discomfort. It's a way of shifting my energy outward, a way of opening up so I can actually see the people around me and what they need.\n\nSelf-absorption is a symptom of both my disease and my ill-chosen methods for dealing with it. I admit that. I own it. I'm self-absorbed. I don't want to be, though.\n\nI want to be able to see to other people's needs. I can do that with children easily, adults are a challenge. Which is funny, because I don't think there's that much of a difference. There's just more controls and coping mechanisms and insecurity layered on top. And knowledge, but it doesn't always do us much good. \n\nBeing nice to each other is just about the only worthwhile thing we've accomplished. It takes work. I do not have an organized mind, but I'm learning to move in sync with others and with what they need to work with me. \n\nSlowly and then with a sudden yet imperceptible shifting, things begin to change. I hope. \n\nSo I learned that I don't have anyone to impress, a concept that in theatre I hadn't been able to grasp in time. I want to take responsibility in groups, responsibility for the well being of others, not because I have something to prove, but because it's the right thing to do. It's the only thing I can truly learn to accomplish.\n\nRegardless of what happens from here on, I can anticipate a change happening--a shift--an altered state of being both foreign and sublime.\n\n",
+      "mood": "Optimistic",
+      "id": 2
+    },
+    {
+      "date": "2019-03-29",
+      "concepts": "Refactoring",
+      "entry": "You can put a function in an object. I knew this sort of, but the purpose of this for this particular project isn't clear. Perhaps it will become more clear in a chapter or two.",
+      "mood": "Confused",
+      "id": 3
+    },
+    {
+      "date": "2019-04-01",
+      "concepts": "Fragments and InnerHTML",
+      "entry": "Due to my constant reliance of createElement for posting the DOM, I did not realize that Fragments don't pass strings to the elements you append them to. That's most likely why our post to DOM function in the last group project wasn't working. Didn't get a chance to ask since it was only on the last day when others were presenting that I began to understand how to work with others and was busy walking Ali through git workflow. Trying to append a fragment with strings intended to represent HTML to a DOM element results in nothing posted, and no errors, so it was difficult to suss out.",
+      "mood": "Confused",
+      "id": 4
+    },
+    {
+      "date": "2019-04-01",
+      "concepts": "Talking About Code",
+      "entry": "I attempted to walk Meag through the planets exercise. She knows more than she thinks she does. Moreover, I've identified more useful tactics for talking about code and helping other people.\n\nI've attempted to lead her to the answer rather than giving it to her. Granted, there were things related to the DOM that even I was having trouble with (see first entry). Eventually our instructors had to help her, but I think I set her on the right track. We had a discussion on how .split works at least.",
+      "mood": "Optimistic",
+      "id": 5
+    },
+    {
+      "date": "2019-04-01",
+      "concepts": "Methods",
+      "entry": "Creating methods stored in objects is a much more organized way of coding. It is much easier to keep track of what part of the code everything is going to, and the tooltips in the editor give a lot more useful information when typing them out.",
+      "mood": "Happy",
+      "id": 6
+    },
+    {
+      "date": "2019-04-01",
+      "concepts": "Session States",
+      "entry": "Session states allow a developer to store strings on the local browser for retrieval. Our group used these to create a login system by checking the user's name and email against users stored in the API, then storing the matching user in session storage, associating everything they create on the site with that user.",
+      "mood": "Happy",
+      "id": 7
+    },
+    {
+      "date": "2019-04-02",
+      "concepts": "Group Work",
+      "entry": "Among the many things I've learned that are valuable, the most has been my increased (though sorely lacking) group working skills. Jisie said that I should focus on my weaknesses in groups, so I'm focusing on looking after my teammates. Still, I can see that I am making progress.",
+      "mood": "Optimistic",
+      "id": 8
+    }
+  ]
+}
