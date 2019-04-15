@@ -30,7 +30,9 @@ const domManager = {
         journalEdit.textContent = "Edit";
         journalEdit.addEventListener("click", event => {
             const id = event.target.parentNode.id
-            editJournal(id, date, entry, concepts, mood);
+            const idArray = id.split("--")
+            const journalId = idArray[2];
+            editJournal(id, date, entry, concepts, mood, journalId);
         })
         section.appendChild(journalEdit);
         frag.appendChild(section);
@@ -43,7 +45,7 @@ const domManager = {
         element.innerHTML = "";
     },
 
-    createEntryField(date, entry, concepts, mood) {
+    createEntryField(date, entry, concepts, mood, id) {
         const fieldFrag = document.createDocumentFragment();
         const dateEntry = document.createElement("input");
         dateEntry.setAttribute("type","date");
@@ -83,6 +85,13 @@ const domManager = {
         fieldFrag.appendChild(conceptEntry)
         fieldFrag.appendChild(entryField)
         fieldFrag.appendChild(moodEntry)
+        const updateButton = document.createElement("button");
+        updateButton.textContent = "Update"
+        updateButton.addEventListener("click", event => {
+            event.preventDefault()
+            updateJournal(dateEntry, conceptEntry, entryField, moodEntry, id)
+        })
+        fieldFrag.appendChild(updateButton);
         return fieldFrag;
     }
 }

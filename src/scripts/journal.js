@@ -37,9 +37,21 @@ const deleteJournal = (id) => {
     })
 }
 
-const editJournal = (fieldId, date, entry, concepts, mood) => {
+const editJournal = (fieldId, date, entry, concepts, mood, dataId) => {
     const field = document.getElementById(fieldId);
     domManager.clearElement(field);
-    const entryField = domManager.createEntryField(date, entry, concepts, mood);
+    const entryField = domManager.createEntryField(date, entry, concepts, mood, dataId);
     field.appendChild(entryField);
+}
+
+const updateJournal = (dateEntry, conceptEntry, entryField, moodEntry, id) => {
+    //build object
+    //pass to pass to api
+    const updatedJournal = {
+        date: dateEntry.value,
+        concepts: conceptEntry.value,
+        entry: entryField.value,
+        mood: moodEntry.value
+    }
+    API.patch(id, updatedJournal).then(() => API.getJournals());
 }

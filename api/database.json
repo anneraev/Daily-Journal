@@ -45,9 +45,16 @@
     {
       "date": "2019-04-02",
       "concepts": "Group Work",
-      "entry": "Among the many things I've learned that are valuable, the most has been my increased (though sorely lacking) group working skills. Jisie said that I should focus on my weaknesses in groups, so I'm focusing on looking after my teammates. Still, I can see that I am making progress.",
+      "entry": "Among the many things I've learned that are valuable, the most has been my increased (though sorely lacking) group working skills. Jisie said that I should focus on my weaknesses in groups, so I'm focusing on looking after my teammates. Still, I can see that I am making progress.\n\nAlso, this has an edit button!!",
       "mood": "Optimistic",
       "id": 8
+    },
+    {
+      "date": "2019-04-15",
+      "concepts": "Promise",
+      "entry": "For the last damn time, since you know this but you keep forgetting: the function callback in .then will not work unless something is being passed from the previous function!!!!!!!!!!! :P",
+      "mood": "Happy",
+      "id": 9
     }
   ]
 }
