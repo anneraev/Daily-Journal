@@ -13,7 +13,6 @@ const API = {
     },
     //posts new journal object to database.
     postToDatabase(newJournal) {
-        console.log(newJournal);
         return fetch("http://localhost:8088/journalEntries", {
                 method: "POST",
                 body: JSON.stringify(newJournal),
@@ -22,5 +21,12 @@ const API = {
                 }
             })
             .then(response => response.json())
-    }
+    },
+    delete: (id) => {
+        return fetch(`http://localhost:8088/journalEntries/${id}`, {
+            //method
+            method: "DELETE",
+        })
+    },
+
 }
